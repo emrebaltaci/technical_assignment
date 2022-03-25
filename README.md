@@ -52,7 +52,7 @@ The page have 3-side; up,down-left, down-right.
 ## Conditions
 In the UI 3 main conditions are available.
 * **CONDITION-1:**  When user pressed "New User" named button-1, Right-Down side must be occur. In default, Right-Down side hidden condition.
-* **CONDITION-2:**In Left-Down side, pull's value as "ID", "User Name", "Email", "Enabled".  topic.
+* **CONDITION-2:** In Left-Down side, pull's value as "ID", "User Name", "Email", "Enabled".  topic.
 	> SELECT  ID,USER NAME, EMAIL,ENABLED  FROM  USER 
 	> SQL command can be used.
 	
