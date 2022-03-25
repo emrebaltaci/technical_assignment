@@ -3,7 +3,6 @@ This is the user interface specification document, which is want in technical as
 ## Requierements
 * SQL-Database
 * UI Labor
- **offline!**
 
 ## Page Design
 The page have 3-side; up,down-left, down-right.
