@@ -60,6 +60,6 @@ In the UI 3 main conditions are available.
 	 > SELECT  ID,USER NAME, EMAIL,ENABLED  FROM  USER WHERE ENABLED==True
 	 >SQL command can be used.
 * **CONDITION-3:** I n this condtion user writes inputs to fields in Right-Down side and click "Save User" button-2, button-2 pulls data. Button makes the following sql comment.
-	>INSERT INTO Employ (ID,Username, Display Name, Phone, Email, User Roles, Enabled) VALUES ('i",'John_Doe', 'John', 'Johndoe@yahoo.com','admin','True');
+	>INSERT INTO User (ID,Username, Display Name, Phone, Email, User Roles, Enabled) VALUES ('i",'John_Doe', 'John', 'Johndoe@yahoo.com','admin','True');
 	
 	After saving operation Right-Down side must hidden condition again.
