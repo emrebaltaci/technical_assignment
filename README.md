@@ -30,10 +30,10 @@ The page have 3-side; up,down-left, down-right.
 * Down-Left side is pull side data from Server.
 	* The visual format Table-1 as 4 column. Column topics are "ID", "User Name", "Email", "Enabled", and topics color is white. In the topics row the color is 0,136,235, as rgb format.
 	* Column shape is shared in the following:
-		| i ID | User Name | Email | Enabled |
+		| ID | User Name | Email | Enabled |
 		| :-----: | :---------: | :-------: | :-----: |
-		|i iindex1 | user1 |email1 |true |
-		|i iindex2 |user2 |email2 |false |
+		| index1 | user1 |email1 |true |
+		| index2 | user2 |email2 |false |
 	*	Each row index, background toggles as white and rgb 0,136,235.
 *	Down-Right side is used for push data to server. Down-Right side has 2 part; Up(Topic) and Down.
 	*	Up side has background as 230,230,230 as rgb format.
@@ -48,3 +48,18 @@ The page have 3-side; up,down-left, down-right.
 			* In default combobox gives an info as "Select user roles..." text
 			* Combobox has 3 items as "Guest", "Admin", "SuperAdmin".
 		* Sixth item is "Enabled:" text and its' text color is black. Input is checkbox-2. The checkbox-2 has disabled in default condition
+	
+## Conditions
+In the UI 3 main conditions are available.
+* **CONDITION-1:**  When user pressed "New User" named button-1, Right-Down side must be occur. In default, Right-Down side hidden condition.
+* **CONDITION-2:**In Left-Down side, pull's value as "ID", "User Name", "Email", "Enabled".  topic.
+	> SELECT  ID,USER NAME, EMAIL,ENABLED  FROM  USER 
+	> SQL command can be used.
+	
+	 When user pressed ,as enabled condition, checkbox-1, in Left-Down side, table just show Enabled==True condition. 
+	 > SELECT  ID,USER NAME, EMAIL,ENABLED  FROM  USER WHERE ENABLED==True
+	 >SQL command can be used.
+* **CONDITION-3:** I n this condtion user writes inputs to fields in Right-Down side and click "Save User" button-2, button-2 pulls data. Button makes the following sql comment.
+	>INSERT INTO Employ (ID,Username, Display Name, Phone, Email, User Roles, Enabled) VALUES ('i",'John_Doe', 'John', 'Johndoe@yahoo.com','admin','True');
+	
+	After saving operation Right-Down side must hidden condition again.
